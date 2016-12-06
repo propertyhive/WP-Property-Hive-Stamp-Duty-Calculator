@@ -17,48 +17,46 @@ function ph_sdc_calculate()
 
     if ( purchase_price != '' )
     {
-    	var $stampDuty = 0;
-        if (purchase_price > 125000 && purchase_price <= 250000)
+        var bands = [
+            { min: 0, max: 125000, pct: 0 },
+            { min: 125000, max: 250000, pct: 0.02 },
+            { min: 250000, max: 925000, pct: 0.05 },
+            { min: 925000, max: 1500000, pct: 0.1 },
+            { min: 1500000, max: null, pct: 0.12 }
+        ];
+
+        if ( jQuery('#btl_second').is(':checked') ) 
         {
-            $workingAmount = purchase_price - 125001;
-            $am1 = 0;
-            $am2 = 0;
-            $am3 = 0;
-            $am4 = $workingAmount;
-        }
-        else if (purchase_price > 250000 && purchase_price <= 925000)
-        {
-            $workingAmount = purchase_price - 250001;
-            $am1 = 0;
-            $am2 = 0;
-            $am3 = $workingAmount;
-            $am4 = 250000 - 125001;
-        }
-        else if (purchase_price > 925000 && purchase_price <= 1500000)
-        {
-            $workingAmount = purchase_price - 925001;
-            $am1 = 0;
-            $am2 = $workingAmount;
-            $am3 = 925000 - 250001;
-            $am4 = 250000 - 125001;
-        }
-        else if (purchase_price > 1500000)
-        {
-            $workingAmount = purchase_price - 1500001;
-            $am1 = $workingAmount;
-            $am2 = 1500000 - 925001;;
-            $am3 = 925000 - 250001;
-            $am4 = 250000 - 125001;
+            bands = [
+                { min: 0, max: 125000, pct: 0.03 },
+                { min: 125000, max: 250000, pct: 0.05 },
+                { min: 250000, max: 925000, pct: 0.08 },
+                { min: 925000, max: 1500000, pct: 0.13 },
+                { min: 1500000, max: null, pct: 0.15 }
+            ];
         }
 
-        $t1 = (12 / 100) * $am1;
-        $t2 = (10 / 100) * $am2;
-        $t3 = (5 / 100) * $am3;
-        $t4 = (2 / 100) * $am4;
+        var number_bands = bands.length;
+        var total_tax = 0;
 
-        $stampDuty = $t1 + $t2 + $t3 + $t4;
+        for (var i = 0; i < number_bands; ++i)
+        {
+            var band = bands[i];
+            var max = purchase_price;
+            if (band.max != null)
+            {
+                max = Math.min(band.max, max);
+            }
+            else
+            {
 
-        jQuery(".stamp-duty-calculator #results input[name=\'stamp_duty\']").val(ph_sdc_add_commas($stampDuty.toFixed(2)));
+            }
+            var taxable_sum = Math.max(0, max - band.min);
+            var tax = taxable_sum * band.pct;
+            total_tax += tax;
+        }
+
+        jQuery(".stamp-duty-calculator #results input[name=\'stamp_duty\']").val(ph_sdc_add_commas(total_tax.toFixed(2)));
         
         jQuery('.stamp-duty-calculator #results').slideDown();
     }
@@ -70,6 +68,10 @@ jQuery(document).ready(function()
 	{
 		ph_sdc_calculate();
 	});
+    jQuery("body").on('change', '.stamp-duty-calculator input', function() 
+    {
+        ph_sdc_calculate();
+    });
 	jQuery("body").on('click', '.stamp-duty-calculator button', function() 
 	{
 		ph_sdc_calculate();
