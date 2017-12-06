@@ -56,6 +56,13 @@ function ph_sdc_calculate()
             total_tax += tax;
         }
 
+        if ( jQuery('#ftb').is(':checked') && purchase_price <= 500000 )
+        {
+            purchase_price = purchase_price - 300000;
+            purchase_price = Math.max(0, purchase_price);
+            total_tax = purchase_price * 0.05;
+        }
+
         jQuery(".stamp-duty-calculator #results input[name=\'stamp_duty\']").val(ph_sdc_add_commas(total_tax.toFixed(2)));
         
         jQuery('.stamp-duty-calculator #results').slideDown();
@@ -64,6 +71,15 @@ function ph_sdc_calculate()
 
 jQuery(document).ready(function()
 {
+    jQuery("body").on('change', '#ftb', function() 
+    {
+        jQuery('#btl_second').attr('checked', false);
+    });
+    jQuery("body").on('change', '#btl_second', function() 
+    {
+        jQuery('#ftb').attr('checked', false);
+    });
+
 	jQuery("body").on('blur', '.stamp-duty-calculator input', function() 
 	{
 		ph_sdc_calculate();
