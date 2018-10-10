@@ -78,7 +78,7 @@ final class PH_Stamp_Duty_Calculator {
     public function propertyhive_stamp_duty_calculator_shortcode( $atts )
     {
         $atts = shortcode_atts( array(
-            
+            'price' => ''
         ), $atts );
 
         wp_enqueue_style( 'ph-stamp-duty-calculator' );

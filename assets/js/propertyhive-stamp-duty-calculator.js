@@ -92,4 +92,6 @@ jQuery(document).ready(function()
 	{
 		ph_sdc_calculate();
 	});
+
+    ph_sdc_calculate();
 });
