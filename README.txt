@@ -3,16 +3,16 @@ Contributors: PropertyHive,BIOSTALL
 Tags: propertyhive, property hive, property, real estate, estate agents, estate agent, stamp duty, stamp duty calculator, stampduty
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=N68UHATHAEDLN&lc=GB&item_name=BIOSTALL&no_note=0&cn=Add%20special%20instructions%20to%20the%20seller%3a&no_shipping=1&currency_code=GBP&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted
 Requires at least: 3.8
-Tested up to: 4.9.8
-Stable tag: 1.0.5
+Tested up to: 5.4.2
+Stable tag: 1.0.6
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
-Quickly and easily add a stamp duty calculator to your website
+Quickly and easily add a stamp duty calculator to your website. Includes new 2020/21 temporary reduced rates
 
 == Description ==
 
-Includes the new 2017 budget changes regarding first time buyers.
+Includes new 2020/21 temporary reduced rates.
 
 This plugin, from the creators of [Property Hive](https://wordpress.org/plugins/propertyhive/), allows you to quickly and easily add a stamp duty calculator to your website by simply adding the shortcode [stamp_duty_calculator] where you want it to appear.
 
@@ -46,6 +46,10 @@ Simply add the shortcode [stamp_duty_calculator] where you want it to appear.
 2. Users are instantly shown the stamp duty owed once they've completed the form
 
 == Changelog ==
+
+= 1.0.6 =
+* Includes the new 2020/21 temporary reduced rates
+* Declared support for WordPress 5.4.2
 
 = 1.0.5 =
 * Added ability to pass in 'price' attribute to shortcode for when being used on a property page
