@@ -61,6 +61,8 @@ final class PH_Stamp_Duty_Calculator {
         add_shortcode( 'stamp_duty_calculator', array( $this, 'propertyhive_stamp_duty_calculator_shortcode' ) );
 
         add_shortcode( 'stamp_duty_calculator_scotland', array( $this, 'propertyhive_stamp_duty_calculator_scotland_shortcode' ) );
+
+        add_shortcode( 'stamp_duty_calculator_commercial', array( $this, 'propertyhive_stamp_duty_calculator_commercial_shortcode' ) );
     }
 
     /**
@@ -129,6 +131,32 @@ final class PH_Stamp_Duty_Calculator {
         return ob_get_clean();
     }
 
+    public function propertyhive_stamp_duty_calculator_commercial_shortcode( $atts )
+    {
+        $atts = shortcode_atts( array(
+            'price' => ''
+        ), $atts );
+
+        wp_enqueue_style( 'ph-stamp-duty-calculator-commercial' );
+
+        wp_enqueue_script( 'jquery' );
+        wp_enqueue_script( 'ph-stamp-duty-calculator-commercial' );
+
+        ob_start();
+
+        $template = locate_template( array('propertyhive/stamp-duty-calculator-commercial.php') );
+        if ( !$template )
+        {
+            include( dirname( PH_STAMP_DUTY_CALCULATOR_PLUGIN_FILE ) . '/templates/stamp-duty-calculator-commercial.php' );
+        }
+        else
+        {
+            include( $template );
+        }
+
+        return ob_get_clean();
+    }
+
     public function load_stamp_duty_calculator_scripts() {
 
         $assets_path = str_replace( array( 'http:', 'https:' ), '', untrailingslashit( plugins_url( '/', __FILE__ ) ) ) . '/assets/';
@@ -144,6 +172,14 @@ final class PH_Stamp_Duty_Calculator {
         wp_register_script(
             'ph-stamp-duty-calculator-scotland',
             $assets_path . 'js/propertyhive-stamp-duty-calculator-scotland.js',
+            array(),
+            PH_STAMP_DUTY_CALCULATOR_VERSION,
+            true
+        );
+
+        wp_register_script(
+            'ph-stamp-duty-calculator-commercial',
+            $assets_path . 'js/propertyhive-stamp-duty-calculator-commercial.js',
             array(),
             PH_STAMP_DUTY_CALCULATOR_VERSION,
             true
@@ -164,6 +200,13 @@ final class PH_Stamp_Duty_Calculator {
         wp_register_style(
             'ph-stamp-duty-calculator-scotland',
             $assets_path . 'css/propertyhive-stamp-duty-calculator-scotland.css',
+            array(),
+            PH_STAMP_DUTY_CALCULATOR_VERSION
+        );
+
+        wp_register_style(
+            'ph-stamp-duty-calculator-commercial',
+            $assets_path . 'css/propertyhive-stamp-duty-calculator-commercial.css',
             array(),
             PH_STAMP_DUTY_CALCULATOR_VERSION
         );

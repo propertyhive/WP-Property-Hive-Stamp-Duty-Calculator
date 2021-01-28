@@ -1,0 +1,5 @@
+.stamp-duty-calculator-commercial                                           {  }
+.stamp-duty-calculator-commercial label                                     { display:block; margin:0; padding:0; margin-bottom:4px; }
+.stamp-duty-calculator-commercial input[type='text']                        { display:block; color:#333; font-size:16px; box-sizing:border-box; padding:6px 7px; width:100%; background:#FFF; margin:0; margin-bottom:10px; }
+.stamp-duty-calculator-commercial button                                    { background:#333; font-size:15px; color:#FFF; border:0; box-sizing:border-box; padding:10px 28px; }
+.stamp-duty-calculator-commercial .stamp-duty-calculator-commercial-results { padding-top:15px; }
