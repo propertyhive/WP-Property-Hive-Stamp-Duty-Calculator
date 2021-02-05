@@ -3,8 +3,8 @@ Contributors: PropertyHive,BIOSTALL
 Tags: propertyhive, property hive, property, real estate, estate agents, estate agent, stamp duty, stamp duty calculator, stampduty
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=N68UHATHAEDLN&lc=GB&item_name=BIOSTALL&no_note=0&cn=Add%20special%20instructions%20to%20the%20seller%3a&no_shipping=1&currency_code=GBP&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted
 Requires at least: 3.8
-Tested up to: 5.4.2
-Stable tag: 1.0.6
+Tested up to: 5.6.1
+Stable tag: 1.0.7
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -38,7 +38,7 @@ Updating should work like a charm; as always though, ensure you backup your site
 
 = The Shortcode =
 
-Simply add the shortcode [stamp_duty_calculator] where you want it to appear.
+Simply add the shortcode [stamp_duty_calculator], [stamp_duty_calculator_scotland] or [stamp_duty_calculator_commercial] where you want it to appear.
 
 == Screenshots ==
 
@@ -46,6 +46,11 @@ Simply add the shortcode [stamp_duty_calculator] where you want it to appear.
 2. Users are instantly shown the stamp duty owed once they've completed the form
 
 == Changelog ==
+
+= 1.0.7 =
+* Added support for Scottish LBTT rates by adding new [stamp_duty_scotland] shortcode
+* Added support for commercial property stamp duty rates by adding new [stamp_duty_commercial] shortcode
+* Declared support for WordPress 5.6.1
 
 = 1.0.6 =
 * Includes the new 2020/21 temporary reduced rates
