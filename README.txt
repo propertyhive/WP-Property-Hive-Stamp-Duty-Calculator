@@ -3,8 +3,8 @@ Contributors: PropertyHive,BIOSTALL
 Tags: propertyhive, property hive, property, real estate, estate agents, estate agent, stamp duty, stamp duty calculator, stampduty
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=N68UHATHAEDLN&lc=GB&item_name=BIOSTALL&no_note=0&cn=Add%20special%20instructions%20to%20the%20seller%3a&no_shipping=1&currency_code=GBP&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted
 Requires at least: 3.8
-Tested up to: 5.6.1
-Stable tag: 1.0.7
+Tested up to: 5.6.2
+Stable tag: 1.0.8
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -46,6 +46,10 @@ Simply add the shortcode [stamp_duty_calculator], [stamp_duty_calculator_scotlan
 2. Users are instantly shown the stamp duty owed once they've completed the form
 
 == Changelog ==
+
+= 1.0.8 =
+* Added support for extended stamp duty holiday until June 20th 2021
+* Declared support for WordPress 5.6.2
 
 = 1.0.7 =
 * Added support for Scottish LBTT rates by adding new [stamp_duty_scotland] shortcode
