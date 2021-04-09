@@ -89,7 +89,6 @@ function ph_sdc_calculate() {
 
     if (
       !jQuery('#new_rates').is(':checked') &&
-      !jQuery('#new_rates_two').is(':checked') &&
       jQuery('#ftb').is(':checked') &&
       purchase_price <= 500000
     ) {
