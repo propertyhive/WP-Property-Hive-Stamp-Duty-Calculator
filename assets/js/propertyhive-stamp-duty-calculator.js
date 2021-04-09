@@ -35,6 +35,7 @@ function ph_sdc_calculate() {
           { min: 1500000, max: null, pct: 0.15 },
         ];
       }
+      //New conditional to take into account July-September holiday starts here
     } else if (jQuery('#new_rates_two').is(':checked')) {
       // Updated bands following changes that run July - September
       var bands = [
