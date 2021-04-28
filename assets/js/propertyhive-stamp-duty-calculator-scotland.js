@@ -18,33 +18,20 @@ function ph_sdcs_calculate()
 
     if ( purchase_price != '' )
     {
-        if ( jQuery('#new_rates_scotland').is(':checked') )
+        var first_band_threshold = 145000;
+        if ( jQuery('#ftb_scotland').is(':checked') )
         {
-            // Under the new rates, until 31st March 2020 the starting threshold for LBTT is £250,000 and first time buyers get no reduction
-            var bands = [
-                { min: 0, max: 250000, pct: 0 },
-                { min: 250000, max: 325000, pct: 0.05 },
-                { min: 325000, max: 750000, pct: 0.1 },
-                { min: 750000, max: null, pct: 0.12 }
-            ];
+            // First time buyers get a starting LBTT threshold of 175,000
+            first_band_threshold = 175000;
         }
-        else
-        {
-            var first_band_threshold = 145000;
-            if ( jQuery('#ftb_scotland').is(':checked') )
-            {
-                // First time buyers get a starting LBTT threshold of 175,000
-                first_band_threshold = 175000;
-            }
 
-            var bands = [
-                { min: 0, max: first_band_threshold, pct: 0 },
-                { min: first_band_threshold, max: 250000, pct: 0.02 },
-                { min: 250000, max: 325000, pct: 0.05 },
-                { min: 325000, max: 750000, pct: 0.1 },
-                { min: 750000, max: null, pct: 0.12 }
-            ];
-        }
+        var bands = [
+            { min: 0, max: first_band_threshold, pct: 0 },
+            { min: first_band_threshold, max: 250000, pct: 0.02 },
+            { min: 250000, max: 325000, pct: 0.05 },
+            { min: 325000, max: 750000, pct: 0.1 },
+            { min: 750000, max: null, pct: 0.12 }
+        ];
 
         var number_bands = bands.length;
         var total_tax = 0;
