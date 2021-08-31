@@ -87,6 +87,15 @@ function ph_sdc_calculate() {
       }
     }
 
+    if (jQuery('#buyer_overseas').is(':checked')) {
+
+        for (var i = 0; i < bands.length; ++i) {
+            var band_with_surcharge = bands[i].pct + 0.02;
+
+            bands[i].pct = +band_with_surcharge.toFixed(2);
+        }
+    }
+
     var number_bands = bands.length;
     var total_tax = 0;
 
@@ -107,10 +116,22 @@ function ph_sdc_calculate() {
       jQuery('#ftb').is(':checked') &&
       purchase_price <= 500000
     ) {
+
+        if (jQuery('#buyer_overseas').is(':checked')) {
+            // Overseas buyers get a 2% surcharge so calculate 2% tax on the amount up to the first £300,000
+            // For first time buyers, this is 0% for the first £300,000
+            var first_band_amount = Math.min(300000, purchase_price);
+            total_tax = first_band_amount * 0.02;
+
+            var tax_rate = 0.07;
+        } else {
+            var tax_rate = 0.05;
+            total_tax = 0;
+        }
       
       purchase_price = purchase_price - 300000;
       purchase_price = Math.max(0, purchase_price);
-      total_tax = purchase_price * 0.05;
+      total_tax += purchase_price * tax_rate;
     }
 
     jQuery(".stamp-duty-calculator #results input[name='stamp_duty']").val(

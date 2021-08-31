@@ -6,6 +6,7 @@
     <label><input type="checkbox" name="new_rates" id="new_rates" value="1"> Property sale will complete on or between 1st of July and 30th of September 2021?</label>
     <label><input type="checkbox" name="ftb" id="ftb" value="1"> I'm a first time buyer</label>
     <label><input type="checkbox" name="btl_second" id="btl_second" value="1"> Property is a buy-to-let or second home</label>
+    <label><input type="checkbox" name="buyer_overseas" id="buyer_overseas" value="1"> Buyer is a non-UK resident</label>
 
     <button><?php echo __( 'Calculate', 'propertyhive' ); ?></button>
 
