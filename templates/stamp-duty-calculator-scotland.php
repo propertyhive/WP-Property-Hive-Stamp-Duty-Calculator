@@ -10,9 +10,9 @@
 
     <div class="stamp-duty-calculator-results-scotland" id="results" style="display:none">
 
-        <h4><?php echo __( 'Stamp Duty', 'propertyhive' ); ?>:</h4>
+        <h4><?php echo __( 'LBTT', 'propertyhive' ); ?>:</h4>
 
-        <label><?php echo __( 'Stamp Duty', 'propertyhive' ); ?> (&pound;)</label>
+        <label><?php echo __( 'LBTT', 'propertyhive' ); ?> (&pound;)</label>
         <input type="text" name="stamp_duty" value="" placeholder="" disabled>
     </div>
 
