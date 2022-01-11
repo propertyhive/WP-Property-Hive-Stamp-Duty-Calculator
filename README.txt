@@ -3,12 +3,12 @@ Contributors: PropertyHive,BIOSTALL
 Tags: propertyhive, property hive, property, real estate, estate agents, estate agent, stamp duty, stamp duty calculator, stampduty
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=N68UHATHAEDLN&lc=GB&item_name=BIOSTALL&no_note=0&cn=Add%20special%20instructions%20to%20the%20seller%3a&no_shipping=1&currency_code=GBP&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted
 Requires at least: 3.8
-Tested up to: 5.8
-Stable tag: 1.0.12
+Tested up to: 5.8.3
+Stable tag: 1.0.13
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
-Quickly and easily add a stamp duty calculator to your website. Includes new 2020/21 temporary reduced rates
+Quickly and easily add a stamp duty calculator to your website.
 
 == Description ==
 
@@ -46,6 +46,10 @@ Simply add the shortcode [stamp_duty_calculator], [stamp_duty_calculator_scotlan
 2. Users are instantly shown the stamp duty owed once they've completed the form
 
 == Changelog ==
+
+= 1.0.13 =
+* Remove references to stamp duty holidays
+* Declared support for WordPress 5.8.3
 
 = 1.0.12 =
 * Added non-UK buyer option to standard Stamp Duty Calculator
