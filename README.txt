@@ -68,8 +68,8 @@ Simply add the shortcode [stamp_duty_calculator], [stamp_duty_calculator_scotlan
 * Declared support for WordPress 5.6.2
 
 = 1.0.7 =
-* Added support for Scottish LBTT rates by adding new [stamp_duty_scotland] shortcode
-* Added support for commercial property stamp duty rates by adding new [stamp_duty_commercial] shortcode
+* Added support for Scottish LBTT rates by adding new [stamp_duty_calculator_scotland] shortcode
+* Added support for commercial property stamp duty rates by adding new [stamp_duty_calculator_commercial] shortcode
 * Declared support for WordPress 5.6.1
 
 = 1.0.6 =
