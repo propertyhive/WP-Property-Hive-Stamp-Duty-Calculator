@@ -18,56 +18,6 @@ function ph_sdc_calculate() {
     .replace(/,/g, '');
 
   if (purchase_price != '') {
-    if (jQuery('#new_rates').is(':checked')) {
-      // Updated bands following changes that last until end of
-     var bands = [
-       {
-         min: 0,
-         max: 250000,
-         pct: 0
-       },
-       {
-         min: 250000,
-         max: 925000,
-         pct: 0.05
-       },
-       {
-         min: 925000,
-         max: 1500000,
-         pct: 0.1
-       },
-       {
-         min: 1500000,
-         max: null,
-         pct: 0.12
-       },
-     ];
-
-      if (jQuery('#btl_second').is(':checked')) {
-        bands = [{
-            min: 0,
-            max: 250000,
-            pct: 0.03
-          },
-          {
-            min: 250000,
-            max: 925000,
-            pct: 0.08
-          },
-          {
-            min: 925000,
-            max: 1500000,
-            pct: 0.13
-          },
-          {
-            min: 1500000,
-            max: null,
-            pct: 0.15
-          },
-        ];
-      }
-      //New conditional to take into account July-September holiday starts here
-    } else {
       var bands = [
         { min: 0, max: 125000, pct: 0 },
         { min: 125000, max: 250000, pct: 0.02 },
@@ -85,7 +35,6 @@ function ph_sdc_calculate() {
           { min: 1500000, max: null, pct: 0.15 },
         ];
       }
-    }
 
     if (jQuery('#buyer_overseas').is(':checked')) {
 
