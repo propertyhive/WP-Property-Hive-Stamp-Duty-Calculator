@@ -38,7 +38,7 @@ Updating should work like a charm; as always though, ensure you backup your site
 
 = The Shortcode =
 
-Simply add the shortcode [stamp_duty_calculator], [stamp_duty_calculator_scotland] or [stamp_duty_calculator_commercial] where you want it to appear.
+Simply add the shortcode [stamp_duty_calculator], [stamp_duty_calculator_scotland], [stamp_duty_calculator_wales] or [stamp_duty_calculator_commercial] where you want it to appear.
 
 == Screenshots ==
 
