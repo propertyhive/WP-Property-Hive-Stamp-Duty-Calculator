@@ -25,15 +25,23 @@ function ph_sdc_calculate() {
       ];
 
       if (jQuery('#btl_second_wales').is(':checked')) {
-        bands = [
-          { min: 0, max: 40000, pct: 0 },
-          { min: 40000, max: 180000, pct: 0.03 },
-          { min: 180000, max: 250000, pct: 0.065 },
-          { min: 250000, max: 400000, pct: 0.08 },
-          { min: 400000, max: 750000, pct: 0.105 },
-          { min: 750000, max: 1500000, pct: 0.13 },
-          { min: 1500000, max: null, pct: 0.15 },
-        ];
+        if ( purchase_price <= 40000 )
+        {
+          bands = [
+            { min: 0, max: 40000, pct: 0 },
+          ];
+        }
+        else
+        {
+          bands = [
+            { min: 0, max: 180000, pct: 0.04 },
+            { min: 180000, max: 250000, pct: 0.075 },
+            { min: 250000, max: 400000, pct: 0.09 },
+            { min: 400000, max: 750000, pct: 0.115 },
+            { min: 750000, max: 1500000, pct: 0.14 },
+            { min: 1500000, max: null, pct: 0.16 },
+          ];
+        }
       }
 
     var number_bands = bands.length;
