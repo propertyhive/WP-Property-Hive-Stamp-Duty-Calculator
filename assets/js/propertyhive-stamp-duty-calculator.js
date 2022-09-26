@@ -19,20 +19,18 @@ function ph_sdc_calculate() {
 
   if (purchase_price != '') {
       var bands = [
-        { min: 0, max: 125000, pct: 0 },
-        { min: 125000, max: 250000, pct: 0.02 },
+        { min: 0, max: 250000, pct: 0 },
         { min: 250000, max: 925000, pct: 0.05 },
         { min: 925000, max: 1500000, pct: 0.1 },
         { min: 1500000, max: null, pct: 0.12 },
       ];
 
       if (jQuery('#btl_second').is(':checked')) {
-        bands = [
-          { min: 0, max: 125000, pct: 0.03 },
-          { min: 125000, max: 250000, pct: 0.05 },
-          { min: 250000, max: 925000, pct: 0.08 },
-          { min: 925000, max: 1500000, pct: 0.13 },
-          { min: 1500000, max: null, pct: 0.15 },
+        bands = bands = [
+            { min: 0, max: 250000, pct: 0.03 },
+            { min: 250000, max: 925000, pct: 0.08 },
+            { min: 925000, max: 1500000, pct: 0.13 },
+            { min: 1500000, max: null, pct: 0.15 },
         ];
       }
 
@@ -61,9 +59,8 @@ function ph_sdc_calculate() {
     }
 
     if (
-      
       jQuery('#ftb').is(':checked') &&
-      purchase_price <= 500000
+      purchase_price <= 625000
     ) {
 
         if (jQuery('#buyer_overseas').is(':checked')) {
@@ -78,7 +75,7 @@ function ph_sdc_calculate() {
             total_tax = 0;
         }
       
-      purchase_price = purchase_price - 300000;
+      purchase_price = purchase_price - 425000;
       purchase_price = Math.max(0, purchase_price);
       total_tax += purchase_price * tax_rate;
     }
