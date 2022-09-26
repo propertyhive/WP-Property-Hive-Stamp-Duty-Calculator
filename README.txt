@@ -3,16 +3,16 @@ Contributors: PropertyHive,BIOSTALL
 Tags: propertyhive, property hive, property, real estate, estate agents, estate agent, stamp duty, stamp duty calculator, stampduty
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=N68UHATHAEDLN&lc=GB&item_name=BIOSTALL&no_note=0&cn=Add%20special%20instructions%20to%20the%20seller%3a&no_shipping=1&currency_code=GBP&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted
 Requires at least: 3.8
-Tested up to: 5.9.1
-Stable tag: 1.0.14
+Tested up to: 6.0.2
+Stable tag: 1.0.15
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
-Quickly and easily add a stamp duty calculator to your website.
+Quickly and easily add a stamp duty calculator to your website. Updated 2022 rates
 
 == Description ==
 
-Includes new 2020/21 temporary reduced rates.
+Includes new September 2022 stamp duty rates.
 
 This plugin, from the creators of [Property Hive](https://wordpress.org/plugins/propertyhive/), allows you to quickly and easily add a stamp duty calculator to your website by simply adding the shortcode [stamp_duty_calculator] where you want it to appear.
 
@@ -46,6 +46,10 @@ Simply add the shortcode [stamp_duty_calculator], [stamp_duty_calculator_scotlan
 2. Users are instantly shown the stamp duty owed once they've completed the form
 
 == Changelog ==
+
+= 1.0.15 =
+* Added support for amended England/NI stamp duty rates introduced September 2022
+* Declared support for WordPress 6.0.2
 
 = 1.0.14 =
 * Added support for Wales LTT calculator using new shortcode [stamp_duty_calculator_wales]
