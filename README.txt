@@ -4,7 +4,7 @@ Tags: propertyhive, property hive, property, real estate, estate agents, estate 
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=N68UHATHAEDLN&lc=GB&item_name=BIOSTALL&no_note=0&cn=Add%20special%20instructions%20to%20the%20seller%3a&no_shipping=1&currency_code=GBP&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted
 Requires at least: 3.8
 Tested up to: 6.0.2
-Stable tag: 1.0.15
+Stable tag: 1.0.16
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -46,6 +46,9 @@ Simply add the shortcode [stamp_duty_calculator], [stamp_duty_calculator_scotlan
 2. Users are instantly shown the stamp duty owed once they've completed the form
 
 == Changelog ==
+
+= 1.0.16 =
+* Updated Wales LTT calculator to include new rates that came into effect on 10th October 2022
 
 = 1.0.15 =
 * Added support for amended England/NI stamp duty rates introduced September 2022
