@@ -16,9 +16,8 @@ function ph_sdc_calculate() {
 
   if (purchase_price != '') {
       var bands = [
-        { min: 0, max: 180000, pct: 0 },
-        { min: 180000, max: 250000, pct: 0.035 },
-        { min: 250000, max: 400000, pct: 0.05 },
+        { min: 0, max: 225000, pct: 0 },
+        { min: 225000, max: 400000, pct: 0.06 },
         { min: 400000, max: 750000, pct: 0.075 },
         { min: 750000, max: 1500000, pct: 0.1 },
         { min: 1500000, max: null, pct: 0.12 },
