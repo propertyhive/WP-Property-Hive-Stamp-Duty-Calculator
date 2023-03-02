@@ -52,8 +52,8 @@ function ph_sdcs_calculate()
 
         if ( jQuery('#btl_second_scotland').is(':checked') && purchase_price >= 40000)
         {
-            // When purchasing a second home for £40,000 or more, an Additional Dwelling Supplement of 4% of the purchase price is charged
-            additional_tax = purchase_price * 0.04;
+            // When purchasing a second home for £40,000 or more, an Additional Dwelling Supplement of 6% of the purchase price is charged
+            additional_tax = purchase_price * 0.06;
             total_tax += additional_tax;
         }
 
