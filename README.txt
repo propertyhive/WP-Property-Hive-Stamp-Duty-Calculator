@@ -3,15 +3,13 @@ Contributors: PropertyHive,BIOSTALL
 Tags: propertyhive, property hive, property, real estate, estate agents, estate agent, stamp duty, stamp duty calculator, stampduty
 Requires at least: 3.8
 Tested up to: 6.4.3
-Stable tag: 1.0.17
+Stable tag: 1.0.18
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
-Quickly and easily add a stamp duty calculator to your website. Updated 2022 rates
+Quickly and easily add a stamp duty calculator to your website.
 
 == Description ==
-
-Includes new September 2022 stamp duty rates.
 
 This plugin, from the creators of [Property Hive](https://wordpress.org/plugins/propertyhive/), allows you to quickly and easily add a stamp duty calculator to your website by simply adding the shortcode [stamp_duty_calculator] where you want it to appear.
 
@@ -45,6 +43,11 @@ Simply add the shortcode [stamp_duty_calculator], [stamp_duty_calculator_scotlan
 2. Users are instantly shown the stamp duty owed once they've completed the form
 
 == Changelog ==
+
+= 1.0.18 =
+* Purchase price to have autocomplete disabled
+* PHP8.2 compatibility
+* Declared support for WordPress 6.4.3
 
 = 1.0.17 =
 * The Additional Dwelling Supplement (ADS) rate in LBTT calculator raised from 4% to 6% following change in December 2022
