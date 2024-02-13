@@ -23,6 +23,16 @@ final class PH_Stamp_Duty_Calculator {
      * @var Property Hive The single instance of the class
      */
     protected static $_instance = null;
+
+    /**
+     * @var string
+     */
+    public $id = '';
+
+    /**
+     * @var string
+     */
+    public $label = '';
     
     /**
      * Main Property Hive Stamp Duty Calculator Instance
