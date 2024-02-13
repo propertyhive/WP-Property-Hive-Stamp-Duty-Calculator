@@ -1,11 +1,11 @@
 <?php
 /**
  * Plugin Name: Property Hive Stamp Duty Calculator
- * Plugin Uri: http://wp-property-hive.com/addons/stamp-duty-calculator/
+ * Plugin Uri: https://wp-property-hive.com/addons/stamp-duty-calculator/
  * Description: Quickly and easily add a stamp duty calculator to your website using a simple shortcode 
  * Version: 1.0.17
  * Author: PropertyHive
- * Author URI: http://wp-property-hive.com
+ * Author URI: https://wp-property-hive.com
  */
 
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly

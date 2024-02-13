@@ -5,7 +5,7 @@ Requires at least: 3.8
 Tested up to: 6.4.3
 Stable tag: 1.0.17
 License: GPLv3
-License URI: http://www.gnu.org/licenses/gpl-3.0.html
+License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
 Quickly and easily add a stamp duty calculator to your website. Updated 2022 rates
 
