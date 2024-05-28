@@ -1,4 +1,4 @@
-function ph_sdc_add_commas(nStr) {
+function ph_sdcw_add_commas(nStr) {
   nStr += '';
   x = nStr.split('.');
   x1 = x[0];
@@ -11,7 +11,7 @@ function ph_sdc_add_commas(nStr) {
 }
 
 // Calculate the LTT(Land Transaction Tax), the Welsh equivalent of Stamp Duty
-function ph_sdc_calculate() {
+function ph_sdcw_calculate() {
   var purchase_price = jQuery(".stamp-duty-calculator-wales input[name='purchase_price']").val().replace(/,/g, '');
 
   if (purchase_price != '') {
@@ -59,7 +59,7 @@ function ph_sdc_calculate() {
     }
 
     jQuery(".stamp-duty-calculator-wales #results input[name='stamp_duty']").val(
-      ph_sdc_add_commas(total_tax.toFixed(2).replace('.00', ''))
+      ph_sdcw_add_commas(total_tax.toFixed(2).replace('.00', ''))
     );
 
     jQuery('.stamp-duty-calculator-wales #results').slideDown();
@@ -68,14 +68,14 @@ function ph_sdc_calculate() {
 
 jQuery(document).ready(function () {
   jQuery('body').on('blur', '.stamp-duty-calculator-wales input', function () {
-    ph_sdc_calculate();
+    ph_sdcw_calculate();
   });
   jQuery('body').on('change', '.stamp-duty-calculator-wales input', function () {
-    ph_sdc_calculate();
+    ph_sdcw_calculate();
   });
   jQuery('body').on('click', '.stamp-duty-calculator-wales button', function () {
-    ph_sdc_calculate();
+    ph_sdcw_calculate();
   });
 
-  ph_sdc_calculate();
+  ph_sdcw_calculate();
 });
