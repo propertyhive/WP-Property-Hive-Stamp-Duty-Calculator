@@ -1,6 +1,6 @@
 === Property Hive Stamp Duty Calculator ===
 Contributors: PropertyHive,BIOSTALL
-Tags: propertyhive, property hive, property, real estate, estate agents, estate agent, stamp duty, stamp duty calculator, stampduty
+Tags: stamp duty, stamp duty calculator, stampduty, propertyhive, property hive, property, real estate, estate agents, estate agent
 Requires at least: 3.8
 Tested up to: 6.4.3
 Stable tag: 1.0.18
