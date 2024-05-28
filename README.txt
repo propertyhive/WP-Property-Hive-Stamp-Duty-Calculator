@@ -3,7 +3,7 @@ Contributors: PropertyHive,BIOSTALL
 Tags: stamp duty, stamp duty calculator, stampduty, propertyhive, property hive, property, real estate, estate agents, estate agent
 Requires at least: 3.8
 Tested up to: 6.5.3
-Stable tag: 1.0.19
+Stable tag: 1.0.20
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -54,6 +54,9 @@ Simply add the shortcode [stamp_duty_calculator], [stamp_duty_calculator_scotlan
 2. Users are instantly shown the stamp duty owed once they've completed the form
 
 == Changelog ==
+
+= 1.0.20 =
+* Updated README containing shortcodes and docs link
 
 = 1.0.19 =
 * Allow both England and Wales stamp duty calculators to be used on the same page
