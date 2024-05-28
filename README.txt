@@ -2,8 +2,8 @@
 Contributors: PropertyHive,BIOSTALL
 Tags: stamp duty, stamp duty calculator, stampduty, propertyhive, property hive, property, real estate, estate agents, estate agent
 Requires at least: 3.8
-Tested up to: 6.4.3
-Stable tag: 1.0.18
+Tested up to: 6.5.3
+Stable tag: 1.0.19
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
