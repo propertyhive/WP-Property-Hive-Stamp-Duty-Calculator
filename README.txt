@@ -11,9 +11,20 @@ Quickly and easily add a stamp duty calculator to your website.
 
 == Description ==
 
-This plugin, from the creators of [Property Hive](https://wordpress.org/plugins/propertyhive/), allows you to quickly and easily add a stamp duty calculator to your website by simply adding the shortcode [stamp_duty_calculator] where you want it to appear.
+This plugin, from the creators of [Property Hive](https://wordpress.org/plugins/propertyhive/), allows you to quickly and easily add a stamp duty calculator to your website by simply adding a shortcode where you want it to appear.
+
+Contains stamp duty calculators for England, Scotland, Wales and Commercial.
+
+The supported shortcodes are as follows:
+
+[stamp_duty_calculator]
+[stamp_duty_calculator_scotland]
+[stamp_duty_calculator_wales]
+[stamp_duty_calculator_commercial]
 
 Users simply enter the purchase price then the stamp duty information is calculated instantly.
+
+[Documentation](https://docs.wp-property-hive.com/category/537-stamp-duty-calculator)
 
 Note: This plugin is independent of Property Hive. You DO NOT need to be using Property Hive to download and use this plugin.
 
