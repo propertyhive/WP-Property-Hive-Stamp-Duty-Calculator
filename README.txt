@@ -44,6 +44,10 @@ Simply add the shortcode [stamp_duty_calculator], [stamp_duty_calculator_scotlan
 
 == Changelog ==
 
+= 1.0.19 =
+* Allow both England and Wales stamp duty calculators to be used on the same page
+* Declared support for WordPress 6.5.3
+
 = 1.0.18 =
 * Purchase price to have autocomplete disabled
 * PHP8.2 compatibility
