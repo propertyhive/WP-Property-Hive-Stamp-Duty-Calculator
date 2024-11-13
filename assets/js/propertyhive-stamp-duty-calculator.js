@@ -27,10 +27,10 @@ function ph_sdc_calculate() {
 
       if (jQuery('#btl_second').is(':checked')) {
         bands = [
-            { min: 0, max: 250000, pct: 0.03 },
-            { min: 250000, max: 925000, pct: 0.08 },
-            { min: 925000, max: 1500000, pct: 0.13 },
-            { min: 1500000, max: null, pct: 0.15 },
+            { min: 0, max: 250000, pct: 0.05 },
+            { min: 250000, max: 925000, pct: 0.10 },
+            { min: 925000, max: 1500000, pct: 0.15 },
+            { min: 1500000, max: null, pct: 0.17 },
         ];
       }
 
