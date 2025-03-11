@@ -33,6 +33,18 @@ function ph_sdcs_calculate()
             { min: 750000, max: null, pct: 0.12 }
         ];
 
+        if ( jQuery('#btl_second_scotland').is(':checked') && purchase_price >= 40000)
+        {
+            first_band_threshold = 145000;
+            bands = [
+                { min: 0, max: first_band_threshold, pct: 0.08 },
+                { min: first_band_threshold, max: 250000, pct: 0.1 },
+                { min: 250000, max: 325000, pct: 0.13 },
+                { min: 325000, max: 750000, pct: 0.18 },
+                { min: 750000, max: null, pct: 0.20 }
+            ];
+        }
+
         var number_bands = bands.length;
         var total_tax = 0;
 
@@ -48,13 +60,6 @@ function ph_sdcs_calculate()
             var taxable_sum = Math.max(0, max - band.min);
             var tax = taxable_sum * band.pct;
             total_tax += tax;
-        }
-
-        if ( jQuery('#btl_second_scotland').is(':checked') && purchase_price >= 40000)
-        {
-            // When purchasing a second home for £40,000 or more, an Additional Dwelling Supplement of 6% of the purchase price is charged
-            additional_tax = purchase_price * 0.06;
-            total_tax += additional_tax;
         }
 
         jQuery(".stamp-duty-calculator-scotland #results input[name=\'stamp_duty\']").val(ph_sdcs_add_commas(total_tax.toFixed(2).replace(".00", "")));
