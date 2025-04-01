@@ -3,7 +3,7 @@ Contributors: PropertyHive,BIOSTALL
 Tags: stamp duty, stamp duty calculator, stampduty, propertyhive, property hive, property, real estate, estate agents, estate agent
 Requires at least: 3.8
 Tested up to: 6.7.2
-Stable tag: 1.0.24
+Stable tag: 1.0.25
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -54,6 +54,9 @@ Simply add the shortcode [stamp_duty_calculator], [stamp_duty_calculator_scotlan
 2. Users are instantly shown the stamp duty owed once they've completed the form
 
 == Changelog ==
+
+= 1.0.25 =
+* Updated the stamp duty calculator rates to cater for 1st April 2025 changes
 
 = 1.0.24 =
 * Updated the Scotland LBTT calculator rates for second/additional homes following recent rate change
