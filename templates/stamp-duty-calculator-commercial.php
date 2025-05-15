@@ -1,7 +1,7 @@
 <div class="stamp-duty-calculator-commercial">
 
     <label id="purchase_price_label"><?php echo __( 'Purchase Price', 'propertyhive' ); ?> (&pound;)</label>
-    <input type="text" name="purchase_price" value="<?php echo esc_attr($atts['price']); ?>" placeholder="e.g. 500,000">
+    <input type="text" name="purchase_price" value="<?php echo is_numeric($atts['price']) ? esc_attr(number_format($atts['price'])) : ''; ?>" placeholder="e.g. 500,000">
 
     <label><input type="checkbox" name="leasehold" id="leasehold" value="1"> Calculate net present value (NPV) of rent on a lease?</label>
 

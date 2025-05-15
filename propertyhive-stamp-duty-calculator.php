@@ -97,6 +97,11 @@ final class PH_Stamp_Duty_Calculator {
             'price' => ''
         ), $atts );
 
+        if ( !empty($atts['price']) )
+        {
+            $atts['price'] = str_replace(',', '', $atts['price']);
+        }
+
         wp_enqueue_style( 'ph-stamp-duty-calculator' );
 
         wp_enqueue_script( 'jquery' );
@@ -122,6 +127,11 @@ final class PH_Stamp_Duty_Calculator {
         $atts = shortcode_atts( array(
             'price' => ''
         ), $atts );
+
+        if ( !empty($atts['price']) )
+        {
+            $atts['price'] = str_replace(',', '', $atts['price']);
+        }
 
         wp_enqueue_style( 'ph-stamp-duty-calculator-scotland' );
 
@@ -149,6 +159,11 @@ final class PH_Stamp_Duty_Calculator {
             'price' => ''
         ), $atts );
 
+        if ( !empty($atts['price']) )
+        {
+            $atts['price'] = str_replace(',', '', $atts['price']);
+        }
+
         wp_enqueue_style( 'ph-stamp-duty-calculator-commercial' );
 
         wp_enqueue_script( 'jquery' );
@@ -174,6 +189,11 @@ final class PH_Stamp_Duty_Calculator {
         $atts = shortcode_atts( array(
             'price' => ''
         ), $atts );
+
+        if ( !empty($atts['price']) )
+        {
+            $atts['price'] = str_replace(',', '', $atts['price']);
+        }
 
         wp_enqueue_style( 'ph-stamp-duty-calculator-wales' );
 

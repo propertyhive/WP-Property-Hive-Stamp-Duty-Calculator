@@ -1,7 +1,7 @@
 <div class="stamp-duty-calculator-wales">
 
     <label><?php echo __( 'Purchase Price', 'propertyhive' ); ?> (&pound;)</label>
-    <input type="text" name="purchase_price" value="<?php echo esc_attr($atts['price']); ?>" placeholder="e.g. 500,000">
+    <input type="text" name="purchase_price" value="<?php echo is_numeric($atts['price']) ? esc_attr(number_format($atts['price'])) : ''; ?>" placeholder="e.g. 500,000">
 
     <label><input type="checkbox" name="btl_second_wales" id="btl_second_wales" value="1"> Property is a buy-to-let or second home</label>
 

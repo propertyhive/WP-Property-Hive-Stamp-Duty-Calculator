@@ -82,6 +82,11 @@ function ph_sdc_calculate() {
       total_tax += purchase_price * tax_rate;
     }
 
+    
+    jQuery(".stamp-duty-calculator input[name='purchase_price']").val(
+      ph_sdc_add_commas(parseFloat(purchase_price).toFixed(2).replace('.00', ''))
+    );
+
     jQuery(".stamp-duty-calculator #results input[name='stamp_duty']").val(
       ph_sdc_add_commas(total_tax.toFixed(2).replace('.00', ''))
     );

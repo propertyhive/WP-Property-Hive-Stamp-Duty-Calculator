@@ -58,6 +58,10 @@ function ph_sdcw_calculate() {
       total_tax += tax;
     }
 
+    jQuery(".stamp-duty-calculator-wales input[name='purchase_price']").val(
+        ph_sdc_add_commas(parseFloat(purchase_price).toFixed(2).replace('.00', ''))
+    );
+
     jQuery(".stamp-duty-calculator-wales #results input[name='stamp_duty']").val(
       ph_sdcw_add_commas(total_tax.toFixed(2).replace('.00', ''))
     );
