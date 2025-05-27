@@ -52,7 +52,7 @@ function ph_sdcc_calculate()
         }
 
         jQuery(".stamp-duty-calculator-commercial input[name='purchase_price']").val(
-            ph_sdc_add_commas(parseFloat(purchase_price).toFixed(2).replace('.00', ''))
+            ph_sdcc_add_commas(parseFloat(purchase_price).toFixed(2).replace('.00', ''))
         );
 
         jQuery(".stamp-duty-calculator-commercial #results input[name=\'stamp_duty\']").val(ph_sdcc_add_commas(total_tax.toFixed(2).replace(".00", "")));

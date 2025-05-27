@@ -63,7 +63,7 @@ function ph_sdcs_calculate()
         }
 
         jQuery(".stamp-duty-calculator-scotland input[name='purchase_price']").val(
-            ph_sdc_add_commas(parseFloat(purchase_price).toFixed(2).replace('.00', ''))
+            ph_sdcs_add_commas(parseFloat(purchase_price).toFixed(2).replace('.00', ''))
         );
 
         jQuery(".stamp-duty-calculator-scotland #results input[name=\'stamp_duty\']").val(ph_sdcs_add_commas(total_tax.toFixed(2).replace(".00", "")));
