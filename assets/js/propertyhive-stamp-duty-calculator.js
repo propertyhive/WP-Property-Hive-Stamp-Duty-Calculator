@@ -17,6 +17,8 @@ function ph_sdc_calculate() {
     .val()
     .replace(/,/g, '');
 
+  var original_purchase_price = purchase_price;
+
   if (purchase_price != '') {
       var bands = [
         { min: 0, max: 125000, pct: 0 },
@@ -84,7 +86,7 @@ function ph_sdc_calculate() {
 
     
     jQuery(".stamp-duty-calculator input[name='purchase_price']").val(
-      ph_sdc_add_commas(parseFloat(purchase_price).toFixed(2).replace('.00', ''))
+      ph_sdc_add_commas(parseFloat(original_purchase_price).toFixed(2).replace('.00', ''))
     );
 
     jQuery(".stamp-duty-calculator #results input[name='stamp_duty']").val(
